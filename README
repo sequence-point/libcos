@@ -1,0 +1,15 @@
+This package contains libcos.
+
+This software is experimental and not yet ready for production use.
+
+libcos is a low-level library for C++ for creating, reading and manipulating
+files in the Carousel Object Structure/System. This primarily means PDF
+documents.
+
+This is a project work in progress and is far from ready for any serious use
+in other projects.
+
+See the LICENSE file for the distribution conditions.
+
+Questions, bugs, and any other feedback can be sent to
+support@sequence-point.se.

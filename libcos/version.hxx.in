@@ -1,0 +1,36 @@
+#ifndef libcos__version_hxx_
+#define libcos__version_hxx_
+
+// The numeric version format is AAAAABBBBBCCCCCDDDE where:
+//
+// AAAAA - major version number
+// BBBBB - minor version number
+// CCCCC - bugfix version number
+// DDD   - alpha / beta (DDD + 500) version number
+// E     - final (0) / snapshot (1)
+//
+// When DDDE is not 0, 1 is subtracted from AAAAABBBBBCCCCC. For example:
+//
+// Version      AAAAABBBBBCCCCCDDDE
+//
+// 0.1.0        0000000001000000000
+// 0.1.2        0000000001000020000
+// 1.2.3        0000100002000030000
+// 2.2.0-a.1    0000200001999990010
+// 3.0.0-b.2    0000299999999995020
+// 2.2.0-a.1.z  0000200001999990011
+//
+#define LIBCOS_VERSION $libcos.version.project_number$ULL
+#define LIBCOS_VERSION_STR "$libcos.version.project$"
+#define LIBCOS_VERSION_ID "$libcos.version.project_id$"
+
+#define LIBCOS_VERSION_MAJOR $libcos.version.major$
+#define LIBCOS_VERSION_MINOR $libcos.version.minor$
+#define LIBCOS_VERSION_PATCH $libcos.version.patch$
+
+#define LIBCOS_PRE_RELEASE $libcos.version.pre_release$
+
+#define LIBCOS_SNAPSHOT_SN $libcos.version.snapshot_sn$ULL
+#define LIBCOS_SNAPSHOT_ID "$libcos.version.snapshot_id$"
+
+#endif

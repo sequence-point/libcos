@@ -1,0 +1,3 @@
+import libs = libcos%lib{cos}
+
+exe{driver}: {hxx ixx txx cxx}{**} $libs

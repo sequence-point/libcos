@@ -1,0 +1,6 @@
+$out_root/
+{
+  include libcos/
+}
+
+export $out_root/libcos/$import.target
